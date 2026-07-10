@@ -1,21 +1,20 @@
-public class Rectangle extends Polygon
+public class Rectangle extends Polygon 
 {
-    private int width; 
+    private int width;
 
-    public Rectangle(int length, int width)
+    public Rectangle(int length, int width) 
     {
-        this.type = type; 
-        this.length = length; 
-        this. width = width;
+        super("Rectangle", 4, length); 
+        this.width = width;
     }
 
-    public double perimeter(int width, int length)
+    public double perimeter(int width, int length) 
     {
-
+        return 2 * (width + length);
     }
 
-    public double area(int width, int length)
+    public double area(int width, int length) 
     {
-        
+        return width * length;
     }
 }
