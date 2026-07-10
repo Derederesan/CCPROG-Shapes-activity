@@ -9,12 +9,12 @@ public class Rectangle extends Polygon
         this. width = width;
     }
 
-    public int perimeter(int width, int length)
+    public double perimeter(int width, int length)
     {
 
     }
 
-    public int area(int width, int length)
+    public double area(int width, int length)
     {
         
     }
