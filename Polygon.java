@@ -1,32 +1,34 @@
-public class Polygon extends Shape
+public class Polygon extends Shape 
 {
-    private int side; 
-    private int length; 
+    private int side;
+    private int length;
 
-    public Polygon (String type, int side, int length)
+    public Polygon(String type, int side, int length) 
     {
-        this.type = type; 
-        this.side = side; 
-        this.length = length; 
+        super(type); // passes type to Shape constructor since type is private
+        this.side = side;
+        this.length = length;
     }
 
-    public int perimeter(int side)
+    public int perimeter(int side) 
     {
-
+        // generic return placeholder for runtime check
+        return 0;
     }
 
-    public int area(int side, int length)
+    public int area(int side, int length) 
     {
-
+        // to be continued later after checking class slides
+        return 0;
     }
 
-    public int getSide()
+    public int getSide() 
     {
-        this.side;
+        return this.side;
     }
 
-    public int getLength()
+    public int getLength() 
     {
-        this.length; 
+        return this.length;
     }
 }
