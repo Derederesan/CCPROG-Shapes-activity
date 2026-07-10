@@ -1,20 +1,22 @@
-public class Circle extends Shape
+public class Circle extends Shape 
 {
-    private int radius; 
+    private int radius;
 
-    public Circle(String type, int radius)
+    public Circle(String type, int radius) 
     {
-        this.type = type; 
+        super(type); // resolved compilation error by calling super instead of this.type
         this.radius = radius;
     }
 
-    public int perimeter(int radius)
+    public int perimeter(int radius) 
     {
-        return (double) 2*MATH.PI*radius;
+        // forced downcast to int to match the required method return signature
+        return (int) (2 * Math.PI * radius);
     }
 
-    public int area (int radius)
+    public int area(int radius) 
     {
-        return (double) MATH.PI*radius*radius;
+        // using correct Math capitalization to prevent compiler crash
+        return (int) (Math.PI * radius * radius);
     }
 }
