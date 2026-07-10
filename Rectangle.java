@@ -2,7 +2,7 @@ public class Rectangle extends Polygon
 {
     private int width; 
 
-    public Rectangle(String type, int length, int width)
+    public Rectangle(int length, int width)
     {
         this.type = type; 
         this.length = length; 
